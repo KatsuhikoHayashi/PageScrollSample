@@ -2,8 +2,19 @@
 //  CustomCell.swift
 //  PageScrollSample
 //
-//  Created by 林克彦 on 2016/06/15.
+//  Created by Hayashidesu. on 2016/06/15.
 //  Copyright © 2016年 Hayashidesu. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CustomCell: UICollectionViewCell {
+    @IBOutlet var img:UIImageView!
+    
+    override init(frame: CGRect){
+        super.init(frame: frame)
+    }
+    required init(coder aDecoder: NSCoder){
+        super.init(coder: aDecoder)!
+    }
+}
